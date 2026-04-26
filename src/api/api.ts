@@ -77,3 +77,19 @@ export const deleteTraining = async (id: number): Promise<void> => {
   const res = await fetch(`${BASE_URL}/trainings/${id}`, { method: 'DELETE' })
   if (!res.ok) throw new Error('Failed to delete training')
 }
+
+// Lisätään uusi harjoitus asiakkaalle
+export const addTraining = async (training: {
+  date: string
+  activity: string
+  duration: number
+  customer: string
+}): Promise<Training> => {
+  const res = await fetch(`${BASE_URL}/trainings`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(training),
+  })
+  if (!res.ok) throw new Error('Failed to add training')
+  return res.json()
+}
