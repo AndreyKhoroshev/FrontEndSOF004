@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { path: '/', label: 'Asiakkaat' },
   { path: '/trainings', label: 'Harjoitukset' },
   { path: '/calendar', label: 'Kalenteri' },
+   { path: '/statistics', label: 'Tilastot' },
 ]
 
 export default function Navbar() {

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import CustomerList from './pages/CustomerList'
 import TrainingList from './pages/TrainingList'
 import CalendarPage from './pages/CalendarPage'
+import StatisticsPage from './pages/StatisticsPage'
 
 // Pääkomponentti joka sisältää reitityksen ja navigaation
 export default function App() {
@@ -16,6 +17,8 @@ export default function App() {
         <Route path="/trainings" element={<TrainingList />} />
         {/* Kalenteri */}
         <Route path="/calendar" element={<CalendarPage />} />
+         {/* Tilastot */}
+        <Route path="/statistics" element={<StatisticsPage />} />
       </Routes>
     </BrowserRouter>
   )
