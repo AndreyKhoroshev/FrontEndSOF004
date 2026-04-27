@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 const NAV_ITEMS = [
   { path: '/', label: 'Asiakkaat' },
   { path: '/trainings', label: 'Harjoitukset' },
+  { path: '/calendar', label: 'Kalenteri' },
 ]
 
 export default function Navbar() {

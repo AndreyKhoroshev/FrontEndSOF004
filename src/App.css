@@ -182,3 +182,65 @@
     border-right-color: var(--border);
   }
 }
+
+/* FullCalendar tummateema */
+.fc {
+  color: #f0f0f0;
+}
+
+.fc .fc-button {
+  background: #242424;
+  border: 1px solid #2e2e2e;
+  color: #f0f0f0;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.fc .fc-button:hover {
+  background: #2e2e2e;
+  border-color: #444;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background: #e8ff5a;
+  border-color: #e8ff5a;
+  color: #111;
+}
+
+.fc .fc-toolbar-title {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #e8ff5a;
+  font-family: monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #888;
+}
+
+.fc .fc-day-today {
+  background: rgba(232, 255, 90, 0.05) !important;
+}
+
+.fc .fc-event {
+  background: #3eb842;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 1px 4px;
+  cursor: pointer;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #2e2e2e;
+}
